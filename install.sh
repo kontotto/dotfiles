@@ -32,10 +32,5 @@ dotfiles_deploy() {
   make deploy
 }
 
-dotfiles_install() {
-	vim +":GoInstallBinaries"
-}
-
 dotfiles_download
 dotfiles_deploy
-dotfiles_install
