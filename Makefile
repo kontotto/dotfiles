@@ -5,4 +5,4 @@ DOTFILES   := $(filter-out $(EXCLUSIONS), $(CANDIDATES))
 all:
 
 deploy:
-	@$(foreach val, ln -sfnv $(abspath $(val)) $(HOME)/$(val))
+	@$(foreach val, $(DOTFILES), ln -sfnv $(abspath $(val)) $(HOME)/$(val))
