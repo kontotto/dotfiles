@@ -1,4 +1,4 @@
-runtime! userautoload/*.vim
+runtime! preload/*.vim
 
 " プラグインが実際にインストールされるディレクトリ
 let s:dein_dir = expand('~/.cache/dein')
@@ -36,3 +36,5 @@ endif
 if dein#check_install()
   call dein#install()
 endif
+
+runtime! preload/*.vim

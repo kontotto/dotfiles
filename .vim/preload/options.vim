@@ -1,3 +1,3 @@
 inoremap <silent> jj <ESC>
 
-filetype plugin indent on
+filetype plugin indent off
