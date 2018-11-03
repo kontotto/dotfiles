@@ -37,4 +37,4 @@ if dein#check_install()
   call dein#install()
 endif
 
-runtime! preload/*.vim
+runtime! postload/*.vim
