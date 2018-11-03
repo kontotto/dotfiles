@@ -1,0 +1,3 @@
+[[plugins]]
+repo = 'faith/vim-go'
+on_ft = ['go']
