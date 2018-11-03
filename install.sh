@@ -33,7 +33,7 @@ dotfiles_deploy() {
 }
 
 dotfiles_install() {
-	vim +"GoInstallBinaries"
+	vim +":GoInstallBinaries"
 }
 
 dotfiles_download
