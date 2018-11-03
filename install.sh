@@ -24,6 +24,11 @@ dotfiles_download() {
 }
 
 dotfiles_deploy() {
+  if [ ! -d $DOTPATH ]; then
+    log_fail "$DOTPATH: not found"
+    exit 1
+  fi
+  cd "$DOTPATH"
   make deploy
 }
 
