@@ -33,7 +33,8 @@ if dein#load_state(s:dein_dir)
 endif
 
 " もし、未インストールものものがあったらインストール
-if dein#check_install()
+silent! let flag = dein#check_install()
+if flag
   call dein#install()
 endif
 
